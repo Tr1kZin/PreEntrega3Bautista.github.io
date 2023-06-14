@@ -1,0 +1,113 @@
+@media (   max-width:480px ) {
+
+    /* mediaglobal*/
+
+    .ocultar{
+        display: none;
+    }
+    h1{
+       width: 480px;
+       
+    }
+    .p-de-banner{
+        width: 480px;
+       }
+    .boton__descarga{
+        display: none;
+    }
+    .texto-agrd{
+        display: none;
+    }
+    .text{
+        display: grid;
+        width: 200px;
+        
+    }
+
+    /* responsive section3  */
+    .contenedor-3{
+        width: 100%;
+           .lorem__box1{            
+            display: none;
+             }
+
+             
+                .footer-text{
+                width: 100%;
+                }
+                    footer{
+                    display: grid;
+                    padding: 20px ;
+                    }
+                        
+                                .pie{
+                                text-align: center;
+                                }
+                                    .texto__ocultMobile{
+                                    display: none;
+                                    }
+                                        .box2{
+                                        display: none;
+                                        }
+                                            .box3{
+                                            display: none;
+                                                  
+                                            } 
+            
+        
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+                  
+    }                           
+    nav {
+        
+        
+        background-color: beige;
+        width: 100%;
+        height: 40px;
+           
+          
+            
+        
+    }
+    
+    
+    .box2{
+        display: none;
+    }
+    
+    .pie{
+        text-align: center;
+    } 
+
+    .texto__ocultMobile{
+        display: none;
+
+    
+    }
+    /* responsive tienda */
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 300px;
+        
+    }
+
+    .cardAkali{
+        display: none;
+    }
+    .cardDraven{
+        display: none;
+    }
+
+
+}
+
+/* contacto responsive */
+.contacto{
+    width: 150px;
+}

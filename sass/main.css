@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header universal (todos los html) */
+header nav {
+  border: black 2px solid;
+}
+header nav .navbar-nav {
+  margin: 0 250px;
+}
+header nav .nav-link {
+  font-size: 20px;
+  margin: 0 25px;
+  transition: 1s;
+}
+header nav .nav-link:hover {
+  color: black;
+  background-color: coral;
+  border-radius: 40px;
+}
+
+/* index */
+.banner {
+  background-color: beige;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.banner .banner__textos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.banner h1 {
+  font-size: 60px;
+}
+.banner .banner__textos p {
+  font-size: 36px;
+  margin: 20px 0 30px 0;
+}
+.banner .boton__descarga {
+  background-color: coral;
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  transition: 1s;
+  border-radius: 50px;
+}
+.banner .boton__descarga:hover {
+  background-color: black;
+  color: white;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text .text h2 {
+  font-size: 36px;
+}
+.text .text p {
+  margin: 40px;
+  font-size: 20px;
+}
+
+/* ajustes de imagenes de tienda e index */
+.col {
+  justify-content: center;
+  width: 25%;
+  margin: 0 50px;
+  padding: 50px 0;
+}
+
+/* decoracion contenedor 2 index  */
+.contenedor-2 {
+  background: linear-gradient(170deg, #0f3443, #34e69f);
+}
+
+/* footer universal (todos los html) */
+.contenedor-3 {
+  background-color: #222222;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.contenedor-3 .footer-text {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-3 .box1 {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+.contenedor-3 .box2, .contenedor-3 .box3, .contenedor-3 .box4 {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+.contenedor-3 .box1 h3, .contenedor-3 .box2 h3, .contenedor-3 .box3 h3, .contenedor-3 .box4 h3 {
+  font-size: 28px;
+  margin: 25px 0;
+}
+.contenedor-3 .box1 p {
+  font-size: 16px;
+}
+.contenedor-3 .box2 a, .contenedor-3 .box3 a, .contenedor-3 .box4 a {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px 0;
+  font-size: 16px;
+}
+.contenedor-3 .rs {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 25px 0;
+}
+.contenedor-3 .rs img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 85%;
+  margin-right: 15px;
+}
+.contenedor-3 .pie {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3c3c3c;
+}
+.contenedor-3 .pie p {
+  font-size: 18px;
+}
+.contenedor-3 .pie a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* tienda */
+.tienda {
+  border: black 2px solid;
+  background: linear-gradient(170deg, #0f3443, #34e69f);
+}
+.tienda .introTienda {
+  text-align: center;
+}
+
+/* INFO ITEMS */
+.cartas {
+  padding: 0 25px;
+}
+
+.sp {
+  background: linear-gradient(170deg, #8c366c, #6f64e7);
+  padding: 15px;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 40px;
+}
+
+/* FORMULARIO PAGINA DE CONTACTO
+ */
+.formulario-titulo {
+  font-size: 25px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.contacto {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .formulario {
+  position: absolute;
+  bottom: 10px;
+  border-radius: 5px;
+  width: 30%;
+  padding: 40px;
+}
+.contacto .text1 {
+  display: grid;
+  width: 96%;
+  height: 45px;
+  margin: 9px auto;
+  padding: 5px;
+  outline: none;
+}
+.contacto .text1 {
+  display: grid;
+  width: 96%;
+  height: 45px;
+  margin: 9px auto;
+  padding: 5px;
+  outline: none;
+}
+.contacto .text2 {
+  display: grid;
+  width: 96%;
+  height: 45px;
+  margin: 9px auto;
+  padding: 5px;
+  outline: none;
+}
+.contacto .form {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  outline: none;
+}
+.contacto .text3 {
+  display: grid;
+  width: 95%;
+  height: 45px;
+  margin: 7px auto;
+  grid-column: 1/3;
+  outline: none;
+}
+.contacto .textarea {
+  width: 99%;
+  height: 100px;
+  margin: 8px auto;
+  grid-column: 1/3;
+  outline: none;
+  resize: none;
+}
+.contacto .sumbit {
+  width: 30%;
+  height: 45px;
+  margin: 8px auto;
+  grid-column: 1/3;
+}
+
+.contacto {
+  background-color: beige;
+}
+
+@media (max-width: 480px) {
+  /* mediaglobal*/
+  .ocultar {
+    display: none;
+  }
+  h1 {
+    width: 480px;
+  }
+  .p-de-banner {
+    width: 480px;
+  }
+  .boton__descarga {
+    display: none;
+  }
+  .texto-agrd {
+    display: none;
+  }
+  .text {
+    display: grid;
+    width: 200px;
+  }
+  /* responsive section3  */
+  .contenedor-3 {
+    width: 100%;
+  }
+  .contenedor-3 .lorem__box1 {
+    display: none;
+  }
+  .contenedor-3 .footer-text {
+    width: 100%;
+  }
+  .contenedor-3 footer {
+    display: grid;
+    padding: 20px;
+  }
+  .contenedor-3 .pie {
+    text-align: center;
+  }
+  .contenedor-3 .texto__ocultMobile {
+    display: none;
+  }
+  .contenedor-3 .box2 {
+    display: none;
+  }
+  .contenedor-3 .box3 {
+    display: none;
+  }
+  .box2 {
+    display: none;
+  }
+  .box3 {
+    display: none;
+  }
+  nav {
+    background-color: beige;
+    width: 100%;
+    height: 40px;
+  }
+  .box2 {
+    display: none;
+  }
+  .pie {
+    text-align: center;
+  }
+  .texto__ocultMobile {
+    display: none;
+  }
+  /* responsive tienda */
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+  .cardAkali {
+    display: none;
+  }
+  .cardDraven {
+    display: none;
+  }
+}
+/* contacto responsive */
+.contacto {
+  display: grid;
+}
+.contacto .formulario-titulo {
+  margin: 20px 150px;
+}
+.contacto .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .text1 {
+  width: 200px;
+}
+.contacto .text2 {
+  display: none;
+}
+.contacto .text3 {
+  padding: 0 50px;
+  width: 200px;
+}
+.contacto .textarea {
+  width: 300px;
+}
+.contacto .sumbit {
+  width: 150px;
+}/*# sourceMappingURL=main.css.map */
