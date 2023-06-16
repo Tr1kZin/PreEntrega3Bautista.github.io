@@ -274,7 +274,7 @@ header nav .nav-link:hover {
   background-color: beige;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   /* mediaglobal*/
   .ocultar {
     display: none;
