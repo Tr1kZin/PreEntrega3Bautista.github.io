@@ -6,6 +6,17 @@
 
 }  
     @import'mobile';
+    @mixin boton_descarga{
+            background-color: coral;
+            padding: 20px 0 ;
+            width: 50%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 24px;
+            color: #fff;
+            transition: 1s;
+            border-radius: 50px;
+    }
     
     @mixin contenedor-3-bloque{
         background-color: #222222;
@@ -69,15 +80,7 @@
                 
                     }
                         .boton__descarga{
-                            background-color: coral;
-                            padding: 20px 0 ;
-                            width: 50%;
-                            text-align: center;
-                            text-decoration: none;
-                            font-size: 24px;
-                            color: #fff;
-                            transition: 1s;
-                            border-radius: 50px;
+                            @include boton_descarga;
 
                         }
                             .boton__descarga:hover{
