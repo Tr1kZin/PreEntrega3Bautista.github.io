@@ -4,26 +4,131 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 500px) {
+  /* mediaglobal*/
+  body {
+    /* responsive section3  */
+    /* responsive tienda */
+  }
+  body .ocultar {
+    display: none;
+  }
+  body h1 {
+    width: 480px;
+  }
+  body .p-de-banner {
+    width: 480px;
+  }
+  body .boton__descarga {
+    display: none;
+  }
+  body .texto-agrd {
+    display: none;
+  }
+  body .text {
+    display: grid;
+    width: 200px;
+  }
+  body .contenedor-3 {
+    width: 100%;
+  }
+  body .contenedor-3 .lorem__box1 {
+    display: none;
+  }
+  body .contenedor-3 .box__2 {
+    display: none;
+  }
+  body .contenedor-3 .box__3 {
+    display: none;
+  }
+  body .contenedor-3 .footer-text {
+    width: 100%;
+  }
+  body .contenedor-3 footer {
+    display: grid;
+    padding: 20px;
+  }
+  body .contenedor-3 .pie {
+    text-align: center;
+  }
+  body .contenedor-3 .texto__ocultMobile {
+    display: none;
+  }
+  body nav {
+    background-color: beige;
+    width: 100%;
+    height: 40px;
+  }
+  body .pie {
+    text-align: center;
+  }
+  body .texto__ocultMobile {
+    display: none;
+  }
+  body .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+  body .cardAkali {
+    display: none;
+  }
+  body .cardDraven {
+    display: none;
+  }
+  /* contacto responsive */
+  .titulo {
+    margin-left: 0px;
+    width: 100vh;
+    height: 100%;
+  }
+  .contactForm {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+  }
+  .text-formulairo {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  form {
+    width: 30%;
+    height: 100%;
+  }
+  .h2-form {
+    width: 100%;
+  }
+}
 /* Header universal (todos los html) */
-header nav {
+body {
+  /* index */
+  /* ajustes de imagenes de tienda e index */
+  /* decoracion contenedor 2 index  */
+  /* footer universal (todos los html) */
+  /* tienda */
+  /* INFO ITEMS */
+  /* FORMULARIO PAGINA DE CONTACTO
+   */
+}
+body header nav {
   border: black 2px solid;
 }
-header nav .navbar-nav {
+body header nav .navbar-nav {
   margin: 0 250px;
 }
-header nav .nav-link {
+body header nav .nav-link {
   font-size: 20px;
   margin: 0 25px;
   transition: 1s;
 }
-header nav .nav-link:hover {
+body header nav .nav-link:hover {
   color: black;
   background-color: coral;
   border-radius: 40px;
 }
-
-/* index */
-.banner {
+body .banner {
   background-color: beige;
   width: 100%;
   height: calc(100vh - 100px);
@@ -31,20 +136,20 @@ header nav .nav-link:hover {
   justify-content: start;
   align-items: center;
 }
-.banner .banner__textos {
+body .banner .banner__textos {
   width: 50%;
   display: flex;
   flex-direction: column;
   padding-left: 50px;
 }
-.banner h1 {
+body .banner h1 {
   font-size: 60px;
 }
-.banner .banner__textos p {
+body .banner .banner__textos p {
   font-size: 36px;
   margin: 20px 0 30px 0;
 }
-.banner .boton__descarga {
+body .banner .boton__descarga {
   background-color: coral;
   padding: 20px 0;
   width: 50%;
@@ -55,41 +160,34 @@ header nav .nav-link:hover {
   transition: 1s;
   border-radius: 50px;
 }
-.banner .boton__descarga:hover {
+body .banner .boton__descarga:hover {
   background-color: black;
   color: white;
 }
-
-.text {
+body .text {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.text .text h2 {
+body .text .text h2 {
   font-size: 36px;
 }
-.text .text p {
+body .text .text p {
   margin: 40px;
   font-size: 20px;
 }
-
-/* ajustes de imagenes de tienda e index */
-.col {
+body .col {
   justify-content: center;
   width: 25%;
   margin: 0 50px;
   padding: 50px 0;
 }
-
-/* decoracion contenedor 2 index  */
-.contenedor-2 {
+body .contenedor-2 {
   background: linear-gradient(170deg, #0f3443, #34e69f);
 }
-
-/* footer universal (todos los html) */
-.contenedor-3 {
+body .contenedor-3 {
   background-color: #222222;
   width: 100%;
   height: 100%;
@@ -99,7 +197,7 @@ header nav .nav-link:hover {
   align-items: center;
   color: #fff;
 }
-.contenedor-3 .footer-text {
+body .contenedor-3 .footer-text {
   width: 90%;
   height: 90%;
   display: flex;
@@ -107,34 +205,34 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-.contenedor-3 .box1 {
+body .contenedor-3 .box1 {
   width: 40%;
   height: 50%;
   display: flex;
   flex-direction: column;
   padding-right: 50px;
 }
-.contenedor-3 .box2, .contenedor-3 .box3, .contenedor-3 .box4 {
+body .contenedor-3 .box__2, body .contenedor-3 .box__3, body .contenedor-3 .box4 {
   width: 20%;
   height: 50%;
   display: flex;
   flex-direction: column;
   padding-right: 50px;
 }
-.contenedor-3 .box1 h3, .contenedor-3 .box2 h3, .contenedor-3 .box3 h3, .contenedor-3 .box4 h3 {
+body .contenedor-3 .box1 h3, body .contenedor-3 .box__2 h3, body .contenedor-3 .box__3 h3, body .contenedor-3 .box4 h3 {
   font-size: 28px;
   margin: 25px 0;
 }
-.contenedor-3 .box1 p {
-  font-size: 16px;
+body .contenedor-3 .box1 p {
+  font-size: 20px;
 }
-.contenedor-3 .box2 a, .contenedor-3 .box3 a, .contenedor-3 .box4 a {
+body .contenedor-3 .box__2 a, body .contenedor-3 .box__3 a, body .contenedor-3 .box4 a {
   text-decoration: none;
   color: #fff;
   margin: 5px 0;
-  font-size: 16px;
+  font-size: 20px;
 }
-.contenedor-3 .rs {
+body .contenedor-3 .rs {
   width: 100%;
   height: 40px;
   display: flex;
@@ -143,13 +241,13 @@ header nav .nav-link:hover {
   align-items: center;
   margin: 25px 0;
 }
-.contenedor-3 .rs img {
+body .contenedor-3 .rs img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 85%;
   margin-right: 15px;
 }
-.contenedor-3 .pie {
+body .contenedor-3 .pie {
   width: 100%;
   height: 10%;
   display: flex;
@@ -157,30 +255,25 @@ header nav .nav-link:hover {
   align-items: center;
   border: 2px solid #3c3c3c;
 }
-.contenedor-3 .pie p {
+body .contenedor-3 .pie p {
   font-size: 18px;
 }
-.contenedor-3 .pie a {
+body .contenedor-3 .pie a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
 }
-
-/* tienda */
-.tienda {
+body .tienda {
   border: black 2px solid;
   background: linear-gradient(170deg, #0f3443, #34e69f);
 }
-.tienda .introTienda {
+body .tienda .introTienda {
   text-align: center;
 }
-
-/* INFO ITEMS */
-.cartas {
+body .cartas {
   padding: 0 25px;
 }
-
-.sp {
+body .sp {
   background: linear-gradient(170deg, #8c366c, #6f64e7);
   padding: 15px;
   margin: 20px 0;
@@ -192,194 +285,126 @@ header nav .nav-link:hover {
   color: #fff;
   border-radius: 40px;
 }
-
-/* FORMULARIO PAGINA DE CONTACTO
- */
-.formulario-titulo {
-  font-size: 25px;
-  margin: 25px auto;
-  text-align: center;
-}
-
-.contacto {
+body .titulo {
+  position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  /* input y text focus */
+}
+body .titulo .contactForm {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr 1fr));
+  gap: 20px;
+  padding: 40px;
+  width: 90%;
+  height: 95%;
+  background: linear-gradient(170deg, #0f3443, #34e69f);
+  box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+  border-radius: 30px;
+}
+body .titulo .text-formulairo {
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 85%;
+  margin-left: 30px;
 }
-.contacto .formulario {
-  position: absolute;
-  bottom: 10px;
-  border-radius: 5px;
-  width: 30%;
-  padding: 40px;
+body .titulo form {
+  width: 80%;
 }
-.contacto .text1 {
-  display: grid;
-  width: 96%;
-  height: 45px;
-  margin: 9px auto;
-  padding: 5px;
-  outline: none;
+body .titulo .texto-contacto {
+  color: black;
+  margin-bottom: 20px;
 }
-.contacto .text1 {
-  display: grid;
-  width: 96%;
-  height: 45px;
-  margin: 9px auto;
-  padding: 5px;
-  outline: none;
+body .titulo .h2-form {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
-.contacto .text2 {
-  display: grid;
-  width: 96%;
-  height: 45px;
-  margin: 9px auto;
-  padding: 5px;
-  outline: none;
+body .titulo .p-form {
+  color: black;
+  line-height: 1.5;
 }
-.contacto .form {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  outline: none;
+body .titulo .inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
-.contacto .text3 {
-  display: grid;
-  width: 95%;
-  height: 45px;
-  margin: 7px auto;
-  grid-column: 1/3;
-  outline: none;
+body .titulo label {
+  color: black;
+  font-weight: 700;
 }
-.contacto .textarea {
-  width: 99%;
-  height: 100px;
-  margin: 8px auto;
-  grid-column: 1/3;
-  outline: none;
+body .titulo input[type=text] {
+  border: none;
+  background: #cbebfb;
+  padding: 10px;
+  border-radius: 15px;
+  color: #1766a3;
+}
+body .titulo input[type=Email] {
+  border: none;
+  background: #cbebfb;
+  padding: 10px;
+  border-radius: 15px;
+  color: #1766a3;
+}
+body .titulo textarea {
+  border: none;
+  background: #cbebfb;
+  padding: 10px;
+  border-radius: 15px;
+  color: #1766a3;
   resize: none;
 }
-.contacto .sumbit {
-  width: 30%;
-  height: 45px;
-  margin: 8px auto;
-  grid-column: 1/3;
+body .titulo input[type=text]:focus {
+  outline: 2px solid #1766a3;
 }
-
-.contacto {
-  background-color: beige;
+body .titulo input[type=Email]:focus {
+  outline: 2px solid #1766a3;
 }
-
-@media (max-width: 480px) {
-  /* mediaglobal*/
-  .ocultar {
-    display: none;
-  }
-  h1 {
-    width: 480px;
-  }
-  .p-de-banner {
-    width: 480px;
-  }
-  .boton__descarga {
-    display: none;
-  }
-  .texto-agrd {
-    display: none;
-  }
-  .text {
-    display: grid;
-    width: 200px;
-  }
-  /* responsive section3  */
-  .contenedor-3 {
-    width: 100%;
-  }
-  .contenedor-3 .lorem__box1 {
-    display: none;
-  }
-  .contenedor-3 .footer-text {
-    width: 100%;
-  }
-  .contenedor-3 footer {
-    display: grid;
-    padding: 20px;
-  }
-  .contenedor-3 .pie {
-    text-align: center;
-  }
-  .contenedor-3 .texto__ocultMobile {
-    display: none;
-  }
-  .contenedor-3 .box2 {
-    display: none;
-  }
-  .contenedor-3 .box3 {
-    display: none;
-  }
-  .box2 {
-    display: none;
-  }
-  .box3 {
-    display: none;
-  }
-  nav {
-    background-color: beige;
-    width: 100%;
-    height: 40px;
-  }
-  .box2 {
-    display: none;
-  }
-  .pie {
-    text-align: center;
-  }
-  .texto__ocultMobile {
-    display: none;
-  }
-  /* responsive tienda */
-  .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 300px;
-  }
-  .cardAkali {
-    display: none;
-  }
-  .cardDraven {
-    display: none;
-  }
+body .titulo textarea:focus {
+  outline: 2px solid #1766a3;
 }
-/* contacto responsive */
-.contacto {
-  display: grid;
+body .titulo input[type=submit] {
+  background: #1766a3;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+  transition: 0.3s;
 }
-.contacto .formulario-titulo {
-  margin: 20px 150px;
+body .titulo input[type=submit]:hover {
+  background: #1766a3;
+  color: #0b426c;
 }
-.contacto .form {
+body .titulo .info-contacto {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.contacto .text1 {
-  width: 200px;
+body .titulo .imagen-box {
+  position: relative;
+  width: 350px;
+  height: 350px;
 }
-.contacto .text2 {
-  display: none;
-}
-.contacto .text3 {
-  padding: 0 50px;
-  width: 200px;
-}
-.contacto .textarea {
-  width: 300px;
-}
-.contacto .sumbit {
-  width: 150px;
+body .titulo img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

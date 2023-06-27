@@ -5,7 +5,8 @@
     box-sizing: border-box;
 
 }  
-    @import'mobile';
+    
+    @import 'mobile';
     @mixin boton_descarga{
             background-color: coral;
             padding: 20px 0 ;
@@ -32,6 +33,9 @@
         background:  linear-gradient(170deg,#0f3443,#34e69f); 
     }
     /* Header universal (todos los html) */
+    body{
+
+    
     header{
          nav{
             
@@ -134,89 +138,96 @@
 
         .footer-text{
     
-            width: 90%;
-            height: 90%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+         width: 90%;
+         height: 90%;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+     
+     
+      }
+      .box1 {
+         
+         width: 40%;
+         height: 50%;
+         display: flex;
+         flex-direction: column;
+         padding-right: 50px;
+     
+      }
+     
+      .box__2 , .box__3, .box4{
         
+         width: 20%;
+         height: 50%;
+         display: flex;
+         flex-direction: column;
+         padding-right: 50px;
+     
+     
+      }
+      .box1 h3, .box__2 h3 ,.box__3 h3 , .box4 h3{
+         font-size: 28px;
+         margin: 25px 0;
+     
+     
+     
+      }
+      .box1 p{
+         font-size: 20px;
+     
+      }
+      .box__2 a, .box__3 a, .box4 a{
+         text-decoration: none;
+         color: #fff ;
+         margin: 5px 0;
+         font-size: 20px;
+     
+     
+      }
+     
+     
+     
+      .rs{
+         
+         width: 100%;
+         height: 40px;
+         display: flex;
+         flex-direction: row;
+         justify-content: left;
+         align-items: center;
+         margin: 25px 0;
+     
+     
+      }
+      .rs img{
+         object-fit: cover;
+         height: 85%;
+         margin-right: 15px;
+         
+      }
+      
+     
+      .pie{
         
-         }
-            .box1 {
-    
-            width: 40%;
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            padding-right: 50px;
+         width: 100%;
+         height: 10%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: 2px solid #3c3c3c;
+     
+      }
+      .pie p{
+         font-size: 18px;
+      }
+      .pie a{
+         text-decoration: none;
+         color: #fff;
+         font-size: 18px;
+      }
         
-            }
-                .box2 , .box3, .box4{
-   
-                    width: 20%;
-                    height: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    padding-right: 50px;
-                }
-
-                    .box1 h3, .box2 h3 ,.box3 h3 , .box4 h3{
-                        font-size: 28px;
-                        margin: 25px 0;
-                    
-                    
-                    
-                     }
-
-                        .box1 p{
-                            font-size: 16px;
-                        
-                         }
-                            .box2 a, .box3 a, .box4 a{
-                                text-decoration: none;
-                                color: #fff ;
-                                margin: 5px 0;
-                                font-size: 16px;
-                            
-                            
-                             }
-                                .rs{
-    
-                                    width: 100%;
-                                    height: 40px;
-                                    display: flex;
-                                    flex-direction: row;
-                                    justify-content: left;
-                                    align-items: center;
-                                    margin: 25px 0;
-                                
-                                
-                                 }
-                                    .rs img{
-                                        object-fit: cover;
-                                        height: 85%;
-                                        margin-right: 15px;
-                                        
-                                     }
-                                        .pie{
-   
-                                            width: 100%;
-                                            height: 10%;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            border: 2px solid #3c3c3c;
-                                        
-                                         }
-                                            .pie p{
-                                                font-size: 18px;
-                                             }
-                                                .pie a{
-                                                    text-decoration: none;
-                                                    color: #fff;
-                                                    font-size: 18px;
-                                                }
     
      }
      /* tienda */
@@ -251,116 +262,163 @@
 
       /* FORMULARIO PAGINA DE CONTACTO
        */
-      .formulario-titulo{
-        font-size: 25px;
-        margin: 25px auto;
-        text-align: center;
-      }
-         .contacto{
-            
-            width: 100%;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            
         
-        
-            .formulario{
-            position: absolute;
-            bottom: 10px;
-            border-radius: 5px;
-            width: 30%;
-            padding: 40px;
-            }
-                .text1  {
+
+
+     .titulo{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+            .contactForm{
+                position: relative;
                 display: grid;
-                width: 96%;
-                height: 45px;
-                margin: 9px auto;
-                padding: 5px;
-                outline: none;
-                 }
-
-                    .text1  {
-                    display: grid;
-                    width: 96%;
-                    height: 45px;
-                    margin: 9px auto;
-                    padding: 5px;
-                    outline: none;
-                 }
-                        .text2{
-                            display: grid;
-                            width: 96%;
-                            height: 45px;
-                            margin: 9px auto;
-                            padding: 5px;
-                            outline: none;
+                grid-template-columns:repeat(auto-fit, minmax(500px, 1fr 1fr));
+                gap: 20px;
+                padding: 40px;
+                width: 90%;
+                height: 95%;
+                @include gradiente-lineal-tienda;
+                box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+                border-radius: 30px;
                 
-                    }   
-                            .form{
-                                width: 100%;
-                                height: 100%;
-                                display: grid;
-                                grid-template-columns: 50% 50%;
-                                outline: none;
-                    
-                            } 
+            }
+                    .text-formulairo{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 85%;
+                    margin-left: 30px;
 
-                                .text3{
-                                    display: grid;
-                                     width: 95%;
-                                    height: 45px;
-                                    margin: 7px auto;
-                                    grid-column: 1/3;
-                                    outline: none;
-                            }
-                                        .textarea {
-                                             width: 99%;
-                                            height: 100px;
-                                             margin: 8px auto;
-                                            grid-column: 1/3;
-                                            outline: none;
-                                            resize: none;
-                            
-                            }
-                                                .sumbit{
-        
-                                                width: 30%;
-                                                height: 45px;
-                                                margin: 8px auto;
-                                                grid-column: 1/3;
-                                
-                            
-                            }
+                    }
+                        form{
+                            width: 80%;
 
-                                                     
-            
-}
-    
-    .contacto{
-        background-color: beige ;
+                         }
+                     .texto-contacto{
+                        color: black;
+                        
+                        margin-bottom: 20px;
+
+                     }
+                     .h2-form{
+                        color: black;
+                        font-size: 2em;
+                        margin-bottom: 10px;
+
+                     }
+                     .p-form{
+                        color: black;
+                        line-height: 1.5;
+                        
+                        
+                     }
+                     .inputBox{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+                     }
+                     label{
+                        color: black;
+                        font-weight: 700;
+                        
+                     }
+                     
+                     input[type="text"]{
+                        border: none;
+                        background: #cbebfb;
+                        padding: 10px;
+                        border-radius: 15px;
+                        color: #1766a3;
+                     }
+                     input[type="Email"]{
+                        border: none;
+                        background: #cbebfb;
+                        padding: 10px;
+                        border-radius: 15px;
+                        color: #1766a3;
+                     }
+                     textarea{
+                        border: none;
+                        background: #cbebfb;
+                        padding: 10px;
+                        border-radius: 15px;
+                        color: #1766a3;
+                        resize: none;
+                     }
+                     /* input y text focus */
+                     input[type="text"]:focus{
+                        outline: 2px solid #1766a3;
+
+                     }
+                     input[type="Email"]:focus{
+                        outline: 2px solid #1766a3;
+                     }
+                     textarea:focus{
+                        outline: 2px solid #1766a3;
+                     }
+
+                     input[type="submit"]{
+                        background: #1766a3;
+                        display: inline-block;
+                        text-align: center;
+                        width: 250px;
+                        padding: 10px;
+                        border-radius: 15px;
+                        color: #fff;
+                        letter-spacing: 1px;
+                        border: none;
+                        cursor: pointer;
+                        box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+                        transition: 0.3s;
+                     }
+                     input[type="submit"]:hover{
+                        background: #1766a3;
+                        color: #0b426c;
+                     }
+                     .info-contacto{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                     }
+                     .imagen-box{
+                        position: relative;
+                        width: 350px;
+                        height: 350px;
+                     }
+                     img{
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+                          
     }
 
 
-    
 
 
-
-
-
-
-    
-   
-
-
-    
-    
-        
-        
-
-
-  
+                  
+    }
